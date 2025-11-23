@@ -1,0 +1,22 @@
+[package]
+name = "cartridge"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+anyhow = "1.0.98"
+dirs = "6.0.0"
+glob = "0.3.2"
+log = "0.4.27"
+toml = "0.8.23"
+env_logger = "0.11.8"
+
+[lib]
+name = "cartridge"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cartridge"
+path = "src/main.rs"
